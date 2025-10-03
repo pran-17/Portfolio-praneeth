@@ -27,6 +27,9 @@ function Home2() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('Sending...');
+    //const serviceID = process.env.REACT_APP_SERVICE_ID; 
+//const templateID = process.env.REACT_APP_TEMPLATE_ID;
+//const userID = process.env.REACT_APP_USER_ID;
 
     // Replace with YOUR EmailJS Service ID, Template ID, and Public Key (see step 3)
     const serviceID = "35praneeth"; 
