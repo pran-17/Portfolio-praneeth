@@ -42,7 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           
-          {/* 3. FIX: Use the capitalized component name in the Route element */}
+          
           <Route path="/certificates" element={<Certificates />} /> 
           
           <Route path="*" element={<Navigate to="/"/>} />
