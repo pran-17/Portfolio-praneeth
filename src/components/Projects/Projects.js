@@ -27,7 +27,7 @@ function Projects() {
               isBlog={false}
               title="Tour booking website"
               description="A website where people can easily find and book travel tours to different places"
-              ghLink="https://github.com/pran-17/Tour-website-.git"
+              ghLink="https://github.com/pran-17/booking-website-tour.git"
               
             />
           </Col>

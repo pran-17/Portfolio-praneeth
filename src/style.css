@@ -741,3 +741,25 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+/* CSS to fix invisible form labels (Add to App.css or style.css) */
+
+/* Targets the form labels inside the contact form section */
+.contact-form-section label {
+    color: #f0f0f0 !important; /* Use a bright, contrasting color like light gray/white */
+    font-weight: 500;
+    margin-bottom: 5px; /* Add a little space below the label */
+}
+
+/* Optional: Improve the text color for the headings in the contact section if needed */
+.contact-form-section h1, .contact-form-section p {
+    color: #bb99ff !important; /* Use your signature purple color for the header/subtext */
+}
+
+/* Optional: Style the input fields themselves for better contrast */
+.contact-form-body .form-control {
+    background-color: #38385e; /* Darker input background */
+    border: 1px solid #6a0572; /* Subtle purple border */
+    color: #e0e0e0; /* Light text color for what the user types */
+}
+/* Add/Modify these styles in your global CSS file (e.g., App.css or style.css) */
+

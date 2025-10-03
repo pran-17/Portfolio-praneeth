@@ -1,18 +1,53 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState } from "react"; // Added useState
+import { Container, Row, Col, Form, Button } from "react-bootstrap"; // Added Form and Button
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
+// Import emailjs
+import emailjs from 'emailjs-com'; 
+
 function Home2() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    // Replace with YOUR EmailJS Service ID, Template ID, and Public Key (see step 3)
+    const serviceID = "35praneeth"; 
+    const templateID = "template_o8a3jfj";
+    const userID = "i93uqYwyRujaJHBiw"; // This is your Public Key
+
+    emailjs.sendForm(serviceID, templateID, e.target, userID)
+      .then((result) => {
+        console.log(result.text);
+        setStatus('Message sent successfully! ✅');
+        setFormData({ name: '', email: '', phone: '', message: '' }); // Clear form
+      }, (error) => {
+        console.log(error.text);
+        setStatus('Failed to send message. Please try again. ❌');
+      });
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+        {/* Original Row 1: Intro Text and Avatar */}
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
@@ -58,9 +93,90 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+        
+        <hr className="my-5" style={{ borderColor: '#6a0572' }} />
+        
+        {/* NEW Row 2: Contact Form Section */}
+        <Row>
+          <Col md={12} className="contact-form-section">
+            <h1 className="text-center">CONTACT ME</h1>
+            <p className="text-center">
+              Send me a message, and I'll get back to you soon.
+            </p>
+            
+            <Row className="justify-content-center">
+              <Col md={8} lg={6}>
+                <Form onSubmit={handleSubmit} className="p-4 rounded shadow-lg contact-form-body">
+                  <Form.Group className="mb-3">
+                    <Form.Label>Your Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name" // Important: must match template variable
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3">
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email" // Important: must match template variable
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3">
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control
+                      type="tel"
+                      placeholder="Enter phone number (optional)"
+                      name="phone" // Important: must match template variable
+                      value={formData.phone}
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      rows={4}
+                      placeholder="Enter your message"
+                      name="message" // Important: must match template variable
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                    />
+                  </Form.Group>
+
+                  <Button variant="primary" type="submit" className="w-100 mt-3">
+                    Send Message
+                  </Button>
+                  
+                  {status && (
+                    <p className="mt-3 text-center" style={{ color: status.includes('successfully') ? 'lightgreen' : 'red' }}>
+                      {status}
+                    </p>
+                  )}
+                </Form>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        
+        <hr className="my-5" style={{ borderColor: '#6a0572' }} />
+
+        {/* Original Row 3: Find Me On Socials */}
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
+            {/* ... social links ... (content is unchanged) */}
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
@@ -70,18 +186,17 @@ function Home2() {
                   href="https://github.com/pran-17"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
-              
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/praneeth-va-550a562ab"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
