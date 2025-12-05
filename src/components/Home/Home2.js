@@ -1,6 +1,6 @@
 import React, { useState } from "react"; // Added useState
 import { Container, Row, Col, Form, Button } from "react-bootstrap"; // Added Form and Button
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -92,7 +92,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="profile" />
             </Tilt>
           </Col>
         </Row>
