@@ -10,7 +10,7 @@
 .section-title {
   font-size: 2.5em;
   margin-bottom: 60px;
-  color: #bb99ff; /* A slightly brighter purple for the title */
+  color: #f1f0f3; /* A slightly brighter purple for the title */
   position: relative;
   display: inline-block;
 }
@@ -23,7 +23,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background-color: #6a0572; /* Underline color */
+  background-color: #e6e1e7; /* Underline color */
   border-radius: 5px;
 }
 
@@ -65,13 +65,13 @@
 .certificate-title {
   font-size: 1.4em;
   margin-bottom: 10px;
-  color: #bb99ff; /* Title color */
+  color: #e9ddf5; /* Title color */
   font-weight: 600;
 }
 
 .certificate-issuer {
   font-size: 0.95em;
-  color: #a0a0a0; /* Issuer text color */
+  color: #f1f0f0; /* Issuer text color */
   margin-bottom: 20px;
 }
 
@@ -79,8 +79,8 @@
   display: inline-block;
   padding: 10px 20px;
   background-color: transparent;
-  color: #bb99ff; /* Link text color */
-  border: 1px solid #bb99ff; /* Purple border for the button-like link */
+  color: #f4f1f1; /* Link text color */
+  border: 1px solid #f2f0f6; /* Purple border for the button-like link */
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -88,7 +88,7 @@
 }
 
 .certificate-link:hover {
-  background-color: #bb99ff; /* Background on hover */
+  background-color: #eae4f7; /* Background on hover */
   color: #1a1a2e; /* Text color on hover */
   box-shadow: 0 0 15px rgba(179, 147, 211, 0.5);
 }

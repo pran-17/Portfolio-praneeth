@@ -37,13 +37,31 @@ const certificateData = [
     link: "https://drive.google.com/file/d/1BMtNlj7KR4hYS49FyFpQ-GxZ5AsZ7upc/view?usp=drive_link", // Replace with your actual link
     icon: "fa-solid fa-award",
   },
-  {
+ 
+   {
     id: 6,
+    title: "Introduction to Generative AI",
+    issuer: "UpGrad",
+    link: "https://drive.google.com/file/d/1HruefJtzHOvGjbS1zLatk2msFU149cMP/view?usp=drive_link", // Replace with your actual link
+    icon: "fa-solid fa-award",
+  },
+   {
+    id: 7,
+    title: "React JS Beginners",
+    issuer: "Simplilearn",
+    link: "https://drive.google.com/file/d/15LalbnmnpLMXYmBs9-6bVoQoskFqThDy/view?usp=drive_link", // Replace with your actual link
+    icon: "fa-solid fa-award",
+  },
+
+  {
+    id: 8,
     title: "Git/GitHub Workshop",
-    issuer: "NoviTech R&D Pvt Limited",
+    issuer: "Novitech",
     link: "https://drive.google.com/file/d/1fuKY6eyyxZhDwj-39IdeHUJGfjYcmi9Q/view?usp=drive_link", // Replace with your actual link
     icon: "fa-solid fa-award",
   },
+
+
 ];
 
 const Certificates = () => {
