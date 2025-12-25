@@ -1,0 +1,56 @@
+.internship-section {
+  padding: 60px 40px;
+  color: #ffffff; /* section text visible */
+}
+
+/* Section Title */
+.internship-section h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Internship Card */
+.internship-card {
+  background: rgba(255, 255, 255, 0.08); /* dark theme friendly */
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Role Title */
+.internship-card h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Company Name */
+.company {
+  font-weight: 500;
+  color: #c77dff; /* matches your purple accent */
+  margin-bottom: 4px;
+}
+
+/* Duration */
+.duration {
+  color: #cccccc;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+/* Bullet Points */
+.internship-card ul {
+  padding-left: 18px;
+}
+
+.internship-card li {
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}

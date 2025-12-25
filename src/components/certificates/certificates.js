@@ -61,6 +61,14 @@ const certificateData = [
     icon: "fa-solid fa-award",
   },
 
+  {
+    id: 9,
+    title: "Technology Job Simulation",
+    issuer: "Deloitte",
+    link: "https://drive.google.com/file/d/1f4wNf8bk2fyKMnI3O-ixhxMHuU2Bvy50/view?usp=drive_link", // Replace with your actual link
+    icon: "fa-solid fa-award",
+  }
+
 
 ];
 
