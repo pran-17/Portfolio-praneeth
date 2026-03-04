@@ -112,6 +112,16 @@ function Projects() {
             />
           </Col>
           
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nlp}
+              isBlog={false}
+              title="EV trip optimization app"
+              description="Created an EV trip optimization app using Android studio and machine learning to suggest optimal routes and charging stops."
+              ghLink="https://github.com/pran-17/Ev-charging-app.git"
+              
+            />
+          </Col>
 
          
         </Row>
