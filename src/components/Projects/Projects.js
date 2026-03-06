@@ -10,7 +10,7 @@ import chatify from "../../Assets/Projects/chatify.jpg";
 import education  from "../../Assets/Projects/education.png";
 import bitsOfCode from "../../Assets/Projects/blog.jpg";
 import soccer from "../../Assets/Projects/soccer.jpg";
-
+import ev from "../../Assets/Projects/ev.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -114,7 +114,7 @@ function Projects() {
           
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={nlp}
+              imgPath={ev}
               isBlog={false}
               title="EV trip optimization app"
               description="Created an EV trip optimization app using Android studio and machine learning to suggest optimal routes and charging stops."
