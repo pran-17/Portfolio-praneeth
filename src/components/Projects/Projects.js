@@ -111,7 +111,7 @@ function Projects() {
               title="Performance Analysis and Injury Prediction System"
               description="built a Soccer Performance & Injury Prediction System using Python, Streamlit, and XGBoost, integrating FIFA player stats, match history, and injury records to extract workload and physiological features. •"
               ghLink="https://github.com/rithishvellingiri/injury-prediction-for-soccer.git"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              // emoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" < -----------Please include a demo link here
             />
           </Col> 
 
