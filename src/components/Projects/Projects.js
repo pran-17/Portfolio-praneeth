@@ -11,6 +11,8 @@ import education  from "../../Assets/Projects/education.png";
 import bitsOfCode from "../../Assets/Projects/blog.jpg";
 import soccer from "../../Assets/Projects/soccer.jpg";
 import ev from "../../Assets/Projects/ev.png";
+import figmacricket from "../../Assets/Projects/figmacricket.png";
+import watchfigma from "../../Assets/Projects/watchfigma.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,6 +25,29 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={figmacricket}
+              isBlog={false}
+              title="Cricket Streaming Mobile App – UI/UX Design"
+              description="This project is a modern UI design created using Figma, focusing on building a clean, user-friendly interface and improving overall user experience. The goal of this project was to design an intuitive digital interface that helps users easily navigate through the application while maintaining a visually appealing layout."
+              figmaLink="https://www.figma.com/design/W3x5ppO8jg6xkGxZf3IjE1/Untitled?node-id=0-1&t=lyjmqvrsY2kuEtC9-1"
+                />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={watchfigma}
+              isBlog={false}
+              title="E-commerce Watch Store Website – UI/UX Design"
+              description="This project is a UI/UX design prototype for a watch sales e-commerce website created using Figma. The goal of the project was to design a modern and visually appealing online platform where users can easily explore and purchase watches."
+              figmaLink="https://www.figma.com/design/2JDyTdcpHLCrMzLFub5z84/Untitled?node-id=0-1&t=jwZ4WqFHUik8KevL-1"
+                />
+          </Col>
+
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}

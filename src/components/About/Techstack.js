@@ -2,22 +2,24 @@ import React, { useState } from "react";
 import "./Skills.css";
 
 const skillsData = [
-  { name: "HTML / CSS", level: 75, category: "Frontend" },
-  { name: "JavaScript", level: 70, category: "Frontend" },
-  { name: "React", level: 75, category: "Frontend" },
-  { name: "TypeScript", level: 70, category: "Frontend" },
-  { name: "Tailwind CSS", level: 80, category: "Frontend" },
+  { name: "HTML / CSS", level: 65, category: "Frontend" },
+  { name: "JavaScript", level: 60, category: "Frontend" },
+  { name: "React", level: 55, category: "Frontend" },
+  { name: "TypeScript", level: 50, category: "Frontend" },
+  { name: "Tailwind CSS", level: 60, category: "Frontend" },
+  { name: "UI/UX Design", level: 50, category: "Frontend" },
 
-  { name: "Node.js", level: 60, category: "Backend" },
-  { name: "Express", level: 65, category: "Backend" },
-  { name: "MongoDB", level: 70, category: "Backend" },
+  { name: "Node.js", level: 50, category: "Backend" },
+  { name: "Express", level: 50, category: "Backend" },
+  { name: "MongoDB", level: 60, category: "Backend" },
 
-  { name: "Python", level: 70, category: "Languages" },
+  { name: "Python", level: 60, category: "Languages" },
   { name: "Java", level: 50, category: "Languages" },
   { name: "C ", level: 50, category: "Languages" },
 
-  { name: "Git & GitHub", level: 85, category: "Tools" },
-  { name: "VS Code", level: 90, category: "Tools" }
+  { name: "Git & GitHub", level: 70, category: "Tools" },
+  { name: "Figma", level: 40, category: "Tools" },
+  { name: "VS Code", level: 80, category: "Tools" }
 ];
 
 function Techstack() {
