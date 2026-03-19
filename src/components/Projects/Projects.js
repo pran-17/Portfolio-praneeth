@@ -13,6 +13,7 @@ import soccer from "../../Assets/Projects/soccer.jpg";
 import ev from "../../Assets/Projects/ev.png";
 import figmacricket from "../../Assets/Projects/figmacricket.png";
 import watchfigma from "../../Assets/Projects/watchfigma.png";
+import fooddesign from "../../Assets/Projects/fooddesign.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -46,6 +47,16 @@ function Projects() {
                 />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fooddesign}
+              isBlog={false}
+              title=" Food Delivery Mobile App – Design"
+              description="Designed a food delivery mobile app UI in Figma, focused on creating a clean and user-friendly ordering experience. The design includes splash, welcome, home, product detail, and login/sign-up screens, improving on older cluttered food app interfaces through better navigation, clear hierarchy, and modern visual design."
+              figmaLink="https://www.figma.com/design/fqa1P1F8wL5woIoDxQLZXt/Untitled?node-id=0-1&t=VHq1uUO95tvIATWI-1"
+                />
+          </Col>
+
 
 
           <Col md={4} className="project-card">
@@ -53,7 +64,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Tour booking website"
-              description="A website where people can easily find and book travel tours to different places"
+              description="A website where people can easily find and book travel tours to different places and explore the world with ease and confidence."
               ghLink="https://github.com/pran-17/world-adventure-website-.git"
               
             />
@@ -98,7 +109,7 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Restaurant Menu Booking  system"
-              description="Built a fully responsive Restaurant Web Application using React.js with a clean, modern component-based MERN architecture."
+              description="Built a fully responsive Restaurant Web Application using React.js with a clean, modern component-based MERN architecture.where users can easily browse the menu, place orders, and manage their bookings with a user-friendly interface."
               ghLink="https://github.com/pran-17/restaurant-food-booking.git"
               
             />
@@ -131,7 +142,7 @@ function Projects() {
               imgPath={nlp}
               isBlog={false}
               title="Interview Assistant  system"
-              description="Created AI interview assistance sytem using NLP"
+              description="Created AI interview assistance sytem using NLP.Where it analyses the job description and generates relevant interview questions and answers to help candidates prepare effectively for their interviews."
               ghLink="https://github.com/pran-17/interview-assistance.git"
               
             />
